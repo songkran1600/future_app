@@ -27,7 +27,7 @@ class _MyListPageState extends State<MyListPage> {
     Product(1, "Anemone", 75,"https://f.ptcdn.info/968/002/000/1362844823-anemone6-o.jpg"),
     Product(2, "Cattleya", 50,"https://sarusandaorchid.com/wp-content/uploads/2019/03/Cattleya-labiata.jpg"),
     Product(3, "Carnation", 41,"https://dy1yydbfzm05w.cloudfront.net/media/catalog/product/cache/39b52c4cabb46819553175347e38b212/1/1/117732_carnation.pinklemonade.cut_car_nul_plp_prd_001_1.jpg"),
-    Product(4, "Gardenia ", 85,"https://www.gardenia.net/storage/app/public/guides/detail/19587224_m.jpg"),
+    Product(4, "Gardenia ", 85,"https://cdn.pixabay.com/photo/2020/06/08/15/58/gardenia-flower-5274932__340.jpg"),
     Product(5, "Gerbera ", 40,"https://www.ikea.com/th/en/images/products/smycka-artificial-flower-gerbera-pink__0903344_pe685480_s5.jpg?f=s"),
   ];
   @override
@@ -45,6 +45,9 @@ class _MyListPageState extends State<MyListPage> {
               leading: Image.network(p.picture,height: 100,width: 100,),
               title: Text(p.name),
               subtitle: Text("Price : ฿"+ p.price.toString()),
+              onTap: (){
+                print(p.id);
+              },
             );
           }).toList(),
         ),
