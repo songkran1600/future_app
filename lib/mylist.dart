@@ -36,6 +36,7 @@ class _MyListPageState extends State<MyListPage> {
       home: Scaffold(
         appBar: AppBar(
           title: Text('All Flower'),
+          backgroundColor: Colors.pinkAccent[100],
         ),
         body: Column(
         //  children: myProducts.map((prd) => Text(prd)).toList()
